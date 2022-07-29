@@ -3,8 +3,8 @@ package vas;
 import com.spire.doc.*;
 import com.spire.doc.documents.*;
 
-public class Main {
-    public static void main(String[] args) {
+public class VasMain {
+    public void custom_report() {
         //Create word document.
         Document document =new Document();
         //Add a new section.
@@ -15,5 +15,6 @@ public class Main {
         paragraph.appendText("Hello World!");
         //Save to file.
         document.saveToFile("output/helloWorld.docx", FileFormat.Docx);
+        System.out.println("report created");
     }
 }
